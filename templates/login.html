@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+   .text {
+    text-align:  center;
+   }
+    .myButton
+    {
+    box-shadow:inset 0px 0px 0px 0px #c4ccc0;
+    background:linear-gradient(to bottom, #74ad5a 5%, #68a54b 100%);
+    background-color:#74ad5a;
+    border-radius:10px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Times New Roman;
+    font-size:23px;
+    font-weight:bold;
+    padding:10px 40px;
+    text-decoration:none;
+    }
+    .btn
+    {
+    /* по-умолчанию для <button>, но пригодится для <a> */
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    /* создаём маленькие отступы, если кнопки перенесутся на две строки */
+    margin: 2px 0;
+    /* невидимая граница (понадобится для цвета при наведении/фокусе) */
+    border: solid 1px transparent;
+    border-radius: 4px;
+    /* размер строится из текста и отступов (без width/height) */
+    padding: 0.5em 1em;
+    /* убедитесь, что достаточно контраста! */
+    color: #ffffff;
+    background-color: #9555af;
+    }
+    </style>
+</head>
+<body>
+    <div class="text">
+        <form action="" method="post">
+
+            <h1>Автоматическая запись к врачу</h1>
+            <p>
+                <label for="username">Имя</label>
+            </p>
+            <p>
+                <input type="text" name="username">
+            </p>
+
+
+            <p>
+                <label for="email">Эл.почта</label>
+            </p>
+            <p>
+                <input type="text" name="email">
+            </p>
+
+            <p>
+                <label for="phone_number">Номер телефона</label>
+            </p>
+            <p>
+                <input type="text" name="phone_number">
+            </p>
+
+
+
+
+            <p>
+                <label for="direction">Направление</label>
+            </p>
+
+            <select name="direction">
+                <option value="direction_1">Офтальмолог</option>
+
+                <option value="direction_2">Дерматология</option>
+
+                <option value="direction_3">Лучевая диагностика</option>
+
+                <option value="direction_4">Женское здоровье</option>
+
+                <option value="direction_5">Ортопедия</option>
+
+                <option value="direction_6">Аптечная служба</option>
+
+                <option value="direction_7">Экстренная помощь</option>
+
+                <option value="direction_8">Внутренние болезни</option>
+
+                <option value="direction_9">Лечение ран</option>
+
+
+            </select>
+            <p>
+                <label for="doctor">Врач</label>
+            </p>
+            <select name="doctor">
+                <option value="doctor_1">Иванов И.И.</option>
+
+                <option value="doctor_2">Петров П.П.</option>
+
+
+
+
+            </select>
+            <p>
+                Выберите интервал:
+            </p>
+            <p>
+                <input type="time" name="time1">
+                <input type="time" name="time2">
+
+            </p>
+            <p>
+                Выберите интервал:
+            </p>
+            <p>
+                <input type="date" name="calendar1">
+                <input type="date" name="calendar2">
+            </p>
+
+
+                <button class="myButton" type="submit">Записаться</button>
+
+        </form>
+    </div>
+</body>
+</html>
